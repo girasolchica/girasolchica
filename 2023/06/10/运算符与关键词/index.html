@@ -7,7 +7,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/sunflower.jpg">
 <meta property="article:published_time" content="2023-06-10T12:39:13.000Z">
-<meta property="article:modified_time" content="2024-07-01T14:04:52.247Z">
+<meta property="article:modified_time" content="2024-07-02T09:39:25.057Z">
 <meta property="article:author" content="girasol">
 <meta property="article:tag" content="JavaScript">
 <meta name="twitter:card" content="summary">
@@ -56,7 +56,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2024-07-01 22:04:52'
+  postUpdate: '2024-07-02 17:39:25'
 }</script><script>(win=>{
       win.saveToLocal = {
         set: (key, value, ttl) => {
@@ -165,7 +165,7 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">        function star(row = 5) &#123;</span><br><span class="line"></span><br><span class="line">​            let start = 0;</span><br><span class="line"></span><br><span class="line">​            do &#123;</span><br><span class="line"></span><br><span class="line">​                let n = 0;</span><br><span class="line"></span><br><span class="line">​                do &#123;</span><br><span class="line"></span><br><span class="line">​                    document.write(&#x27;*&#x27;);</span><br><span class="line"></span><br><span class="line">​                &#125; while (++n &lt;= start);</span><br><span class="line"></span><br><span class="line">​                document.write(&quot;&lt;br/&gt;&quot;);</span><br><span class="line"></span><br><span class="line">​            &#125; while (++start &lt;= row);</span><br><span class="line"></span><br><span class="line">​        &#125;</span><br><span class="line"></span><br><span class="line">​        star();</span><br></pre></td></tr></table></figure>
 
 <p>for循环打印杨辉三角</p>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="C:\Users\sunny\AppData\Roaming\Typora\typora-user-images\1719755793039.png" alt="1719755793039"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/../img/sanjiao.jpg" alt="1719755793039"></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">        function sanjiao(row = 5) &#123;</span><br><span class="line"></span><br><span class="line">​            for (let i = 1; i &lt; row; i++) &#123; //控制行数</span><br><span class="line"></span><br><span class="line">​                for (let n = row - i; n &gt; 0; n--) &#123;</span><br><span class="line"></span><br><span class="line">​                    document.write(&quot;^&quot;);//先打印出空白区域</span><br><span class="line"></span><br><span class="line">​                &#125;</span><br><span class="line"></span><br><span class="line">​                for (let m = i * 2 - 1; m &gt; 0; m--) &#123;</span><br><span class="line"></span><br><span class="line">​                    document.write(&quot;*&quot;);</span><br><span class="line"></span><br><span class="line">​                &#125;</span><br><span class="line"></span><br><span class="line">​                document.write(&quot;&lt;br/&gt;&quot;);</span><br><span class="line"></span><br><span class="line">​            &#125;</span><br><span class="line"></span><br><span class="line">​        &#125;</span><br><span class="line"></span><br><span class="line">​        sanjiao(5);</span><br></pre></td></tr></table></figure>
 <h3 id="typeof与instancesof"><a href="#typeof与instancesof" class="headerlink" title="typeof与instancesof"></a>typeof与instancesof</h3><p>instanceof能够详细区分数组属性和对象属性。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">let arr=[];</span><br><span class="line"></span><br><span class="line">​            console.log(typeof arr); //object</span><br><span class="line"></span><br><span class="line">​            let a=&#123;&#125;;</span><br><span class="line"></span><br><span class="line">​            console.log(typeof a);//object</span><br><span class="line"></span><br><span class="line">​            console.log(arr instanceof Array);//判断arr.prototype(原型链上是否有数组属性) 会打印true</span><br><span class="line"></span><br><span class="line">​            console.log(a instanceof Object);//判断a.peototype  true</span><br></pre></td></tr></table></figure>
