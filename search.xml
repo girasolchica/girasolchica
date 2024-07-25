@@ -23,6 +23,25 @@
     
     
     <entry>
+      <title>零零碎碎</title>
+      <link href="/2023/06/26/%E9%81%BF%E5%85%8D%E6%95%B0%E5%AD%97%E7%B2%BE%E5%BA%A6/"/>
+      <url>/2023/06/26/%E9%81%BF%E5%85%8D%E6%95%B0%E5%AD%97%E7%B2%BE%E5%BA%A6/</url>
+      
+        <content type="html"><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">let a=(0.2*100+0.1*100);</span><br><span class="line">let b=a/100;</span><br><span class="line">console.log(b); // 0.3</span><br><span class="line"></span><br><span class="line">let c=(0.2+0.1).toFixed(2)//保留两位小数 0.30</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>js基础2</title>
       <link href="/2023/06/13/v-if%E4%B8%8Ev-show/"/>
       <url>/2023/06/13/v-if%E4%B8%8Ev-show/</url>
