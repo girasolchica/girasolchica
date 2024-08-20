@@ -8,7 +8,7 @@
       <link href="/2024/04/14/%E5%85%AB%E8%82%A1/"/>
       <url>/2024/04/14/%E5%85%AB%E8%82%A1/</url>
       
-        <content type="html"><![CDATA[<h3 id="CSS-单位中-px、em-和-rem-的区别？"><a href="#CSS-单位中-px、em-和-rem-的区别？" class="headerlink" title="CSS 单位中 px、em 和 rem 的区别？"></a>CSS 单位中 px、em 和 rem 的区别？</h3><p>px：图像的分辨率通常用像素来表示。分辨率表示图像在水平和垂直方向上的像素数量<br>em：em 是相对长度单位，相对于其父元素的字体大小进行计算，例如，如果父元素的字体大小为 16px，而子元素的字体大小设置为 1.5em，则子元素的字体大小将为 16px * 1.5 &#x3D; 24px。如果嵌套使用 em 单位，则其计算方式将基于所有父元素的字体大小，直到找到一个具有绝对字体大小（如px）的元素为止。如果找不到绝对字体大小，则浏览器会默认使用浏览器的默认字体大小。<br>rem: 字体相对于根元素（html）的字体大小</p>]]></content>
+        <content type="html"><![CDATA[<h3 id="CSS-单位中-px、em-和-rem-的区别？"><a href="#CSS-单位中-px、em-和-rem-的区别？" class="headerlink" title="CSS 单位中 px、em 和 rem 的区别？"></a>CSS 单位中 px、em 和 rem 的区别？</h3><p>一、px是固定的像素，一旦设置了就无法因为适应页面大小而改变。</p><p>二、em和rem相对于px更具有灵活性，他们是相对长度单位，意思是长度不是定死了的，更适用于响应式布局。</p><p>三、em是相对于其父元素来设置字体大小的，一般都是以的“font-size”为基准。这样就会存在一个问题，进行任何元素设置，都有可能需要知道他父元素的大小。而rem是相对于根元素，这样就意味着，我们只需要在根元素确定一个参考值</p><p>总之：对于em和rem的区别一句话概括：</p><p>em相对于父元素，rem相对于根元素。</p><h3 id="水平垂直居中的几种方法"><a href="#水平垂直居中的几种方法" class="headerlink" title="水平垂直居中的几种方法"></a>水平垂直居中的几种方法</h3><p>1 使用flex布局<br>利用flex的alignItems:center垂直居中，justifycontent:center水平居中<br>2 利用相对定位和绝对定位的margin:auto<br>相对定位下，使用绝对定位将上下左右都设置为0，再设置margin:auto即可实现居中<br>3 利用相对定位和绝对定位，再加上外边距和平移的配合<br>相对定位下，使用绝对定位，利用margin偏移外容器的50%，再利用translate平移回补自身宽高的50%即可</p><p>4 利用textAlign和verticalAlign<br>利用textAlign:center实现行内元素的水平居中，再利用verticalAlign:middle实现行内元素的垂直居中，前提是要先加上伪元素并给设置高度为100%，用过elementUI的可以去看看其消息弹窗居中实现方式就是如此</p><p>5 其他<br>上面都是在未知外容器和自身宽高下实现水平垂直居中的，如果已知其宽高，可以有更多种简单的方式实现居中，其原理无非是利用绝对定位的top&#x2F;left偏移、margin偏移、padding填充，在此就不分析了。还有就是单纯文字的居中利用lineHeight和textAlign即可实现。</p>]]></content>
       
       
       
