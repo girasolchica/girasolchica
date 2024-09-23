@@ -7,7 +7,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/sunflower.jpg">
 <meta property="article:published_time" content="2024-09-23T13:01:56.232Z">
-<meta property="article:modified_time" content="2024-09-23T12:32:17.053Z">
+<meta property="article:modified_time" content="2024-09-23T13:09:47.579Z">
 <meta property="article:author" content="girasol">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/img/sunflower.jpg"><link rel="shortcut icon" href="/img/sun.jpg"><link rel="canonical" href="http://example.com/2024/09/23/%E9%9D%A2%E8%AF%95%E9%A2%98%E6%B1%87%E6%80%BB/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
@@ -55,7 +55,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2024-09-23 20:32:17'
+  postUpdate: '2024-09-23 21:09:47'
 }</script><script>(win=>{
       win.saveToLocal = {
         set: (key, value, ttl) => {
@@ -309,6 +309,7 @@
     主线程先执行同步任务(script)，然后才去执行任务队列里的任务，如果在执行宏任务（setTimeout）之前有微任务（promise、nextTick），那么要先执行微任务
     全部执行完之后等待主线程的调用，调用完之后再去任务队列中查看是否有异步任务，这样一个循环往复的过程就是事件循环！
     promise本身是同步的，但是catch、then回调函数是异步的（微任务）注意不能被resolve(成功)和reject（失败）迷惑，要看.then的位置，还有promise状态只能改变一次
+    promise 与then 相当于async 与await（后者基于promise）
 </code></pre>
 <h5 id="22-ajax是什么？怎么实现的？"><a href="#22-ajax是什么？怎么实现的？" class="headerlink" title="22.ajax是什么？怎么实现的？"></a>22.ajax是什么？怎么实现的？</h5><pre><code>    创建交互式网页应用的网页开发技术
         在不重新加载整个网页的前提下，与服务器交换数据并更新部分内容
